@@ -10,7 +10,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    implementation("org.jetbrains.kotlinx:kandy-api:0.7.1")
+    implementation("org.jetbrains.kotlinx:dataframe:0.9.1")
+    implementation("org.apache.commons:commons-math3:3.6.1")
+
+    // Additional dependencies that might be needed
+    implementation("org.jetbrains.lets-plot:lets-plot-kotlin:4.1.0")
+    implementation("org.jetbrains.lets-plot:lets-plot-image-export:3.0.0")
 }
 
 tasks.test {
